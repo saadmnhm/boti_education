@@ -1,0 +1,25 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-4.27265" y="-4.27265" width="68.3617" height="68.3624"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2.14px);clip-path:url(#bgblur_0_528_15030_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="4.27265">
+<circle cx="29.9086" cy="29.9086" r="29.9086" fill="url(#paint0_linear_528_15030)" fill-opacity="0.1"/>
+<circle cx="29.9086" cy="29.9086" r="29.3745" stroke="url(#paint1_linear_528_15030)" stroke-opacity="0.2" stroke-width="1.06816"/>
+</g>
+<g clip-path="url(#clip1_528_15030)">
+<path d="M22.4316 29.9086H37.3859" stroke="white" stroke-width="1.06816" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.9766 36.3175L37.3855 29.9086" stroke="white" stroke-width="1.06816" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.9766 23.4996L37.3855 29.9086" stroke="white" stroke-width="1.06816" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_528_15030_clip_path" transform="translate(4.27265 4.27265)"><circle cx="29.9086" cy="29.9086" r="29.9086"/>
+</clipPath><linearGradient id="paint0_linear_528_15030" x1="59.8171" y1="29.9086" x2="29.9086" y2="29.9086" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_528_15030" x1="59.8171" y1="29.9086" x2="29.9086" y2="29.9086" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip1_528_15030">
+<rect width="25.6359" height="25.6359" fill="white" transform="translate(17.0898 17.0906)"/>
+</clipPath>
+</defs>
+</svg>

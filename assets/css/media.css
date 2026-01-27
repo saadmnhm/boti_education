@@ -1,0 +1,316 @@
+@media screen and (max-width: 1024px) {
+    .desktop{
+        display: none !important;
+    }
+    .mobile{
+        display: block !important;
+    }
+
+   .banner_home{
+        background-position: center center;
+   }
+   .icon_banner{
+        padding-top: 76px !important;
+   } 
+   .home_banner_text_2{
+    position: static !important;
+   }
+   .home_banner_text_2 p{
+    padding: 0 30px;
+   }
+    .banner2 {
+        bottom: 68px !important;
+        background-position: center;
+    }
+    .home_banner2_text p{
+        padding: 0 30px;
+    }
+    .logo_boti_ia{
+        padding: 0px 30px;
+    }
+    .video-container {
+        width: 350px !important;
+    }   
+    .youtube_frame{
+        padding: 50px 30px !important;
+    }
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .play-button {
+        width: 50px !important;
+        height: 50px !important;
+    }
+     .comp_card {
+        width: 190px !important
+    }
+    .section_comp {
+        margin-top: -75px !important;
+        padding-bottom: 30px;
+    }
+    .section_comp .comp_title h1 {
+        padding-top: 85px !important;
+        font-size: 25px !important;
+    }
+    .card-img-top{
+        margin-bottom: 36px !important;
+        margin-top: 5px !important;
+
+    }
+    .comp_card {
+        height: 220px !important;
+    }
+    .card-body {
+        padding-top: 0 !important;
+        line-height: 28px !important;
+    }
+    .comp_card span {
+        font-size: 23px !important;
+    }
+
+    .carousel_ytb {
+        flex-wrap: wrap;
+    }
+    .banner_home .home_banner_text p {
+        font-size: 24px !important;
+        padding: 0px 20px !important;
+    }
+    .icon_banner img{
+        max-width: 175px;
+        margin-bottom: 20px;
+    }
+    .btn_debar button {
+        font-size: 20px !important;
+    }
+    .comp_title {
+        padding-top: 0 !important;
+    }
+    .banner2 {
+        position: relative;
+        z-index: 999;
+    }
+    .comp_card p {
+        font-size: 19px;
+    }
+    .youtube_carousel {
+        .behind_left,
+         .behind_right {
+            padding: 0px;
+            width: 175px !important;
+            position: absolute !important;
+        }
+        .behind_right{
+            right: -76px !important;
+        }
+        .behind_left{
+            left: -76px !important;
+        }
+        .info-side
+        {
+             min-width: auto !important; 
+            text-align: center;
+        }
+        .main-title {
+            font-size: 25px;
+        }
+        .carousel_ytb {
+            margin-top: 45px;
+            padding: 0px 15px;
+        }
+    }
+    .white-btn {
+        margin-top: 28px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1205px) {
+    .body_country {
+        padding: 0px 80px !important;
+    }
+    .dubai {
+        top: -215px;
+        left: -29px;
+        width: 215px;
+    }
+    .japan {
+        top: -215px;
+        right: -29px;
+        width: 215px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .body_country {
+        display: flex;
+        position: relative;
+        padding: 0 40px;
+    }
+    .dubai {
+        top: -152px;
+        left: -36px;
+        width: 156px;
+    }
+    .japan {
+        top: -152px;
+        right: -36px;
+        width: 156px;
+    }
+    .country_text {
+        color: white;
+        font-weight: 500;
+        padding: 0 129px;
+    }
+    .to_frame {
+        position: absolute;
+        top: 116px;
+        left: 56%;
+        width: 165px;
+    }
+    .travel_country .china {
+        width: 256px;
+        position: relative;
+        top: 0px;
+        left: 20px;
+    }
+    .flight {
+        position: relative;
+        top: -80px;
+    }
+}
+
+.desktop-768{
+    display: block;
+}
+.mobile-768{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .mobile-768{
+        display: block;
+    }
+    .desktop-768{
+        display: none;
+    }
+    .country{
+        background-image: url(../images/mobile_banner6.png) !important;
+    }
+    .country_text {
+        color: white;
+        font-weight: 500;
+        padding: 0 20px;
+    }
+    .country .country_head_text h2 {
+        padding: 115px 0 10px 0;
+        font-size: 24px;
+        color: white;
+        font-weight: 800;
+    }
+    .travel_country {
+        display: block;
+        position: relative;
+        margin-top: 20px;
+    }
+    .travel_text{
+        padding: 0 20px !important;
+    }
+    .travel_country .china {
+        width: 223px;
+        position: relative;
+        top: 42px;
+        left: 140px;
+    }
+    .to_frame {
+        position: absolute;
+        top: 174px;
+        left: 0%;
+        width: 166px;
+        transform: rotate(49deg);
+    }
+    .flight {
+        position: relative;
+        top: 0 !important;
+    }
+    .logo-card {
+        width: auto;
+    }
+    .media-section {
+        background-position: center !important;
+    }
+    .form-card {
+        top: -85px;
+    }
+    .img_robo_inscription {
+        top: 45px;
+        right: 0px;
+        
+    }
+    .inscription h2 {
+        font-size: 27px;
+        text-align: center;
+        left: 0px;
+        top: 60px;
+    }
+    .form-grid{
+        display:  block !important;
+    }
+    .input-group{
+        margin-bottom: 15px !important;
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .left-side {
+        margin-bottom: 40px;
+    }
+
+    .left-side h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .full-width {
+        grid-column: span 1;
+    }
+    .submit-btn {
+        grid-column: span 1;
+    }
+    .object-label {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-col {
+        border-right: none;
+        border-bottom: 1px solid #E0DFF5;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+
+    .contact-col:last-child {
+        border-bottom: none;
+    }
+
+    .logo-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
