@@ -321,7 +321,8 @@
                     </div>
                     
                     <div class="step-3-right">
-                        <p class="step-3-description">Notre équipe est là pour répondre à toutes vos questions et vous accompagner dans votre découverte de Boti School.</p>
+                        
+                        <p class="step-3-description">pour plus d'informations, veuillez contacter notre équipe <strong>cs</strong></p>
                         
                         <div class="contact-buttons">
                             <a href="https://wa.me/1234567890" class="contact-btn whatsapp-btn" target="_blank">
@@ -340,6 +341,7 @@
 
                             </a>
                         </div>
+                        <p class="step-3-description">Tutoriaux utiles qui pourraient vous aider :</p>
                         
                         <div class="video-section">
                             <div class="learn-vd">
