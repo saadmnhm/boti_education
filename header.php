@@ -139,7 +139,7 @@
                 <button id="prevBtn" class="icon-btn prev-btn">
                         <img src="assets/images/prev.png" alt="">
                 </button>
-                <button id="closeBtn" class="icon-btn close-btn">
+                <button id="closeBtn_stepper" class="icon-btn close-btn">
                     <i class="fas fa-times"></i>
                 </button>
             </div>

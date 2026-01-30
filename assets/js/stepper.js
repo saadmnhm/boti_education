@@ -43,47 +43,36 @@ function init() {
 }
 
 function setupEventListeners() {
+    // Fix: Add event listener to each button in the NodeList
     openStepperBtn.forEach(button => {
         button.addEventListener('click', openModal);
     });
     
-    if (closeBtn_stepper) {
-        closeBtn_stepper.addEventListener('click', closeModal);
-    }
-    if (modal) {
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
-        });
-    }
+    closeBtn_stepper.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
 
-    if (prevBtn) {
-        prevBtn.addEventListener('click', goToPreviousStep);
-    }
+    prevBtn.addEventListener('click', goToPreviousStep);
 
     step1Cards.forEach(card => {
         card.addEventListener('click', () => selectCard(card, 'step1'));
     });
-    if (continueStep1Btn) {
-        continueStep1Btn.addEventListener('click', goToNextFromStep1);
-    }
+    continueStep1Btn.addEventListener('click', goToNextFromStep1);
 
     step2aCards.forEach(card => {
         card.addEventListener('click', () => selectCard(card, 'step2a'));
     });
     
-    if (budgetRange) {
-        budgetRange.addEventListener('input', updateBudget);
-    }
+    budgetRange.addEventListener('input', updateBudget);
     
-    const inputs = [firstNameInput, lastNameInput, emailInput, phoneInput, addressInput].filter(input => input !== null);
+    const inputs = [firstNameInput, lastNameInput, emailInput, phoneInput, addressInput];
     inputs.forEach(input => {
         input.addEventListener('input', validateForm);
         input.addEventListener('blur', () => validateInput(input));
     });
     
-    if (continueStep2aBtn) {
-        continueStep2aBtn.addEventListener('click', submitForm);
-    }
+    continueStep2aBtn.addEventListener('click', submitForm);
 
     // Step 2b choice buttons
     if (choiceBtn1) {
