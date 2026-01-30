@@ -2107,6 +2107,7 @@ footer ul li a{
   display: block;
 }
 @media(max-width:767px){
+
   .team_work .team h2 {
     font-size: 21px;
 }
@@ -2208,8 +2209,26 @@ footer ul li a{
     padding: 15px;
     display: GRID;
 }
-footer {
-text-align: center;
+.footer .logo-div h2 {
+    color: #241759;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.footer .col {
+    width: 100%;
+}
+
+.footer .logo-div {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
 }
 .circle_animation {
     width: 100%;

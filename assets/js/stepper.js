@@ -10,28 +10,32 @@ let formData = {
     budget: 0
 };
 
-const openBtn_stepper = document.querySelector('#openStepperBtn, .openStepperBtn');
-const modal = document.querySelector('#stepperModal');
-const closeBtn_stepper = document.querySelector('#closeBtn_stepper');
-const prevBtn = document.querySelector('#prevBtn');
+const openStepperBtn = document.querySelectorAll('.openStepperBtn');
+const modal = document.getElementById('stepperModal');
+const closeBtn_stepper = document.getElementById('closeBtn_stepper');
+const prevBtn = document.getElementById('prevBtn');
 const step1 = document.querySelector('.step-1');
-const step2 = document.querySelector('.step-2');
+const step2a = document.querySelector('.step-2a');
+const step2b = document.querySelector('.step-2b');
+const step3 = document.querySelector('.step-3');
 const stepSuccess = document.querySelector('.step-success');
 
-const step1Cards = document.querySelectorAll('.step-1 .card');
-const continueStep1Btn = document.querySelector('#continueStep1');
+const step1Cards = document.querySelectorAll('.step-1 .cards_stepper');
+const continueStep1Btn = document.getElementById('continueStep1');
 
-const step2Cards = document.querySelectorAll('.step-2 .card');
-const continueStep2Btn = document.querySelector('#continueStep2');
-const budgetRange = document.querySelector('#budgetRange');
-const budgetValue = document.querySelector('#budgetValue');
-const firstNameInput = document.querySelector('#firstName');
-const lastNameInput = document.querySelector('#lastName');
-const emailInput = document.querySelector('#email');
-const phoneInput = document.querySelector('#phone');
-const addressInput = document.querySelector('#address');
+const step2aCards = document.querySelectorAll('.step-2a .cards_stepper');
+const continueStep2aBtn = document.getElementById('continueStep2a');
+const choiceBtn1 = document.getElementById('choiceBtn1');
+const choiceBtn2 = document.getElementById('choiceBtn2');
+const budgetRange = document.getElementById('budgetRange');
+const budgetValue = document.getElementById('budgetValue');
+const firstNameInput = document.getElementById('firstName');
+const lastNameInput = document.getElementById('lastName');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const addressInput = document.getElementById('address');
 
-const closeSuccessBtn = document.querySelector('#closeSuccess');
+const closeSuccessBtn = document.getElementById('closeSuccess');
 
 function init() {
     setupEventListeners();
@@ -39,39 +43,70 @@ function init() {
 }
 
 function setupEventListeners() {
-    // Support multiple open buttons
-    const openButtons = document.querySelectorAll('#openStepperBtn, .openStepperBtn');
-    openButtons.forEach(btn => {
-        btn.addEventListener('click', openModal);
+    openStepperBtn.forEach(button => {
+        button.addEventListener('click', openModal);
     });
     
-    closeBtn_stepper.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
-    });
+    if (closeBtn_stepper) {
+        closeBtn_stepper.addEventListener('click', closeModal);
+    }
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+    }
 
-    prevBtn.addEventListener('click', goToPreviousStep);
+    if (prevBtn) {
+        prevBtn.addEventListener('click', goToPreviousStep);
+    }
 
     step1Cards.forEach(card => {
         card.addEventListener('click', () => selectCard(card, 'step1'));
     });
-    continueStep1Btn.addEventListener('click', goToStep2);
+    if (continueStep1Btn) {
+        continueStep1Btn.addEventListener('click', goToNextFromStep1);
+    }
 
-    step2Cards.forEach(card => {
-        card.addEventListener('click', () => selectCard(card, 'step2'));
+    step2aCards.forEach(card => {
+        card.addEventListener('click', () => selectCard(card, 'step2a'));
     });
     
-    budgetRange.addEventListener('input', updateBudget);
+    if (budgetRange) {
+        budgetRange.addEventListener('input', updateBudget);
+    }
     
-    const inputs = [firstNameInput, lastNameInput, emailInput, phoneInput, addressInput];
+    const inputs = [firstNameInput, lastNameInput, emailInput, phoneInput, addressInput].filter(input => input !== null);
     inputs.forEach(input => {
         input.addEventListener('input', validateForm);
         input.addEventListener('blur', () => validateInput(input));
     });
     
-    continueStep2Btn.addEventListener('click', submitForm);
+    if (continueStep2aBtn) {
+        continueStep2aBtn.addEventListener('click', submitForm);
+    }
+
+    // Step 2b choice buttons
+    if (choiceBtn1) {
+        choiceBtn1.addEventListener('click', () => {
+            // Go to Step 3 (FAQ)
+            showStep('step3');
+        });
+    }
+    
+    if (choiceBtn2) {
+        choiceBtn2.addEventListener('click', () => {
+            // Go to Step 3 (FAQ)
+            showStep('step3');
+        });
+    }
 
     closeSuccessBtn.addEventListener('click', closeModal);
+    
+    // FAQ collapse functionality
+    initFAQ();
+    
+    // Video popup functionality
+    initVideoPopup();
 }
 
 function openModal() {
@@ -90,7 +125,7 @@ function resetStepper() {
     selectedOption = null;
     selectedPreference = null;
     
-    document.querySelectorAll('.card').forEach(card => {
+    document.querySelectorAll('.cards_stepper').forEach(card => {
         card.classList.remove('selected');
     });
     
@@ -112,23 +147,29 @@ function resetStepper() {
     budgetValue.textContent = '0';
     
     continueStep1Btn.disabled = true;
-    continueStep2Btn.disabled = true;
+    continueStep2aBtn.disabled = true;
     
-    showStep(1);
+    showStep('step1');
 }
 
-function showStep(stepNumber) {
-    currentStep = stepNumber;
+function showStep(stepName) {
+    currentStep = stepName;
     
     step1.classList.remove('active');
-    step2.classList.remove('active');
+    if (step2a) step2a.classList.remove('active');
+    if (step2b) step2b.classList.remove('active');
+    if (step3) step3.classList.remove('active');
     stepSuccess.classList.remove('active');
     
-    if (stepNumber === 1) {
+    if (stepName === 'step1') {
         step1.classList.add('active');
-    } else if (stepNumber === 2) {
-        step2.classList.add('active');
-    } else if (stepNumber === 3) {
+    } else if (stepName === 'step2a') {
+        if (step2a) step2a.classList.add('active');
+    } else if (stepName === 'step2b') {
+        if (step2b) step2b.classList.add('active');
+    } else if (stepName === 'step3') {
+        if (step3) step3.classList.add('active');
+    } else if (stepName === 'success') {
         stepSuccess.classList.add('active');
     }
     
@@ -136,7 +177,7 @@ function showStep(stepNumber) {
 }
 
 function updatePrevButton() {
-    if (currentStep === 1) {
+    if (currentStep === 'step1') {
         prevBtn.disabled = true;
         prevBtn.style.visibility = 'hidden';
     } else {
@@ -146,14 +187,29 @@ function updatePrevButton() {
 }
 
 function goToPreviousStep() {
-    if (currentStep > 1) {
-        showStep(currentStep - 1);
+    if (currentStep === 'step2a' || currentStep === 'step2b') {
+        showStep('step1');
+    } else if (currentStep === 'step3') {
+        // Go back to step2b if user came from Directeur path
+        if (selectedOption === 'option2') {
+            showStep('step2b');
+        } else {
+            showStep('step1');
+        }
+    } else if (currentStep === 'success') {
+        showStep('step2a');
     }
 }
 
-function goToStep2() {
+function goToNextFromStep1() {
     if (selectedOption) {
-        showStep(2);
+        // If option1 (Tuteur), go to step2a
+        // If option2 (Directeur), go to step2b
+        if (selectedOption === 'option1') {
+            showStep('step2a');
+        } else if (selectedOption === 'option2') {
+            showStep('step2b');
+        }
     }
 }
 
@@ -163,8 +219,8 @@ function selectCard(card, step) {
         card.classList.add('selected');
         selectedOption = card.dataset.value;
         continueStep1Btn.disabled = false;
-    } else if (step === 'step2') {
-        step2Cards.forEach(c => c.classList.remove('selected'));
+    } else if (step === 'step2a') {
+        step2aCards.forEach(c => c.classList.remove('selected'));
         card.classList.add('selected');
         selectedPreference = card.dataset.value;
         validateForm();
@@ -228,7 +284,7 @@ function validateForm() {
     
     const allValid = isFirstNameValid && isLastNameValid && isEmailValid && isPhoneValid && isAddressValid && isPreferenceSelected;
     
-    continueStep2Btn.disabled = !allValid;
+    continueStep2aBtn.disabled = !allValid;
 }
 
 function submitForm() {
@@ -248,46 +304,124 @@ function submitForm() {
         formData.phone = phoneInput.value.trim();
         formData.address = addressInput.value.trim();
         
-        const submitData = {
-            op: 'stepper',
+        // Prepare email data
+        const emailData = {
             step1: selectedOption,
             step2: selectedPreference,
-            firstName: formData.firstName,
-            lastName: formData.lastName,
-            email: formData.email,
-            phone: formData.phone,
-            address: formData.address,
-            budget: formData.budget
+            ...formData
         };
         
-        // Send email to admin
-        fetch('mail.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: new URLSearchParams(submitData)
-        })
-        .then(response => response.text())
-        .then(data => {
-            console.log('Server response:', data);
-            try {
-                const jsonData = JSON.parse(data);
-                if (jsonData.status === 'success') {
-                    console.log('Email sent successfully');
-                } else {
-                    console.error('Email sending failed:', jsonData.message);
-                }
-            } catch(e) {
-                console.log('Response (not JSON):', data);
-            }
-        })
-        .catch(error => {
-            console.error('Error sending email:', error);
-        });
+        // Send data by email using mailto
+        sendEmail(emailData);
         
-        showStep(3);
+        showStep('success');
     }
 }
 
+function sendEmail(data) {
+    // Create email body with formatted data
+    const subject = encodeURIComponent('Nouvelle soumission de formulaire Stepper');
+    const body = encodeURIComponent(
+        `Nouvelle soumission de formulaire:\n\n` +
+        `Étape 1 - Êtes-vous: ${data.step1}\n\n` +
+        `Étape 2 - Type de local: ${data.step2}\n` +
+        `Nombre d'élèves: ${data.budget}\n\n` +
+        `Informations:\n` +
+        `Nom & Prénom: ${data.firstName}\n` +
+        `Nom de l'école: ${data.lastName}\n` +
+        `Email: ${data.email}\n` +
+        `Téléphone: ${data.phone}\n` +
+        `Adresse: ${data.address}\n\n` +
+        `Date: ${new Date().toLocaleString('fr-FR')}`
+    );
+    
+}
+
 init();
+
+function openModal() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    const offcanvasElement = document.getElementById('offcanvasExample');
+    if (offcanvasElement) {
+        const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+        if (offcanvasInstance) {
+            offcanvasInstance.hide();
+        }
+    }
+}
+
+// FAQ Collapse functionality
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Toggle current item
+            if (isActive) {
+                item.classList.remove('active');
+            } else {
+                item.classList.add('active');
+            }
+        });
+    });
+}
+
+// Video Popup functionality
+function initVideoPopup() {
+    // Create video popup element
+    const videoPopup = document.createElement('div');
+    videoPopup.className = 'video-popup';
+    videoPopup.innerHTML = `
+        <div class="video-popup-content">
+            <button class="video-popup-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <iframe id="videoIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    `;
+    document.body.appendChild(videoPopup);
+    
+    const videoThumbnail = document.getElementById('videoThumbnail');
+    const videoIframe = document.getElementById('videoIframe');
+    const videoPopupClose = videoPopup.querySelector('.video-popup-close');
+    
+    // YouTube video ID (replace with actual video ID)
+    const videoId = 'dQw4w9WgXcQ'; // Example YouTube video ID
+    
+    if (videoThumbnail) {
+        videoThumbnail.addEventListener('click', () => {
+            videoPopup.classList.add('active');
+            videoIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            document.body.style.overflow = 'hidden';
+        });
+    }
+    
+    if (videoPopupClose) {
+        videoPopupClose.addEventListener('click', closeVideoPopup);
+    }
+    
+    videoPopup.addEventListener('click', (e) => {
+        if (e.target === videoPopup) {
+            closeVideoPopup();
+        }
+    });
+    
+    function closeVideoPopup() {
+        videoPopup.classList.remove('active');
+        videoIframe.src = '';
+        document.body.style.overflow = 'auto';
+    }
+}

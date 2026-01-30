@@ -1,137 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Boti School - Plateforme de gestion Éducative Tout-en-un    </title>
-  <meta property="og:title" content="Boti School - Plateforme de gestion Éducative Tout-en-un">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="http://boti.educationassets/img/logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:site_name" content="BOTI SCHOOL">
-  <meta name="keywords" content="Boti School,Plateforme éducative,Gestion scolaire,Application scolaire,Gestion administrative école,Mots-clés secondaires,Gestion pédagogique,Digitalisation école,Communication école,Gestion financière école,Plateforme école web mobile,Administration scolaire numérique,Solution gestion école,Écosystème éducatif digital,Gestion des performances scolaires,Transport scolaire,Boti School,Educational platform,School management,School application,School administrative management,Pedagogical management,School digitalization,School communication,School financial management,Mobile web school platform,Digital school administration,School management solution,Digital educational ecosystem,School performance,managemen,School transport,بوتي سكول, منصة تعليمية,إدارة المدرسة,تطبيق مدرسي,إدارة مدرسية إدارية,إدارة تربوية,رقمنة المدرسة,التواصل المدرسي,إدارة مالية مدرسية,منصة مدرسية للويب والجوال,إدارة مدرسية رقمية,حل إدارة المدرسة,النظام البيئي التعليمي الرقمي,إدارة الأداء المدرسي,النقل المدرسي">
-  <meta name="description" content="Application web et mobile pour Écoles : Gestion administrative, pédagogique, financière et  communication simples et efficaces">
-  <meta property="og:description" content="Application web et mobile pour Écoles : Gestion administrative, pédagogique, financière et  communication simples et efficaces">
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/stepper.css">
-</head>
-<body>
-<div class="background_color1">
-    <header class="site-header" id="mainHeader">
-      <div class="header-bar">
-        <div class="brand">
-          <a href="index.php"><img src="assets/images/logo_white.svg" id="logo_header" class="logo-header" alt="Boti School Logo"></a>
-          
-        </div>
-
-        <!-- DESKTOP NAV -->
-        <nav class="main-nav d-none d-lg-flex">
-          <a class="nav-link has-mega mega_galaxy" href="index.php">La Galaxy BOTI ▾</a>
-          <a class="nav-link" href="partnerships.php">Partnerships</a>
-          <a class="nav-link" href="presse.php">Presse</a>
-          <a class="nav-link" href="team.php">La Boti Team</a>
-          <a class="nav-link" href="references.php">Références</a>
-          <a class="nav-link" href="publications.php">Publications</a>
-          <a class="nav-link" href="enjoyia.php">AI</a>
-        </nav>
-
-        <button class="btn-contact d-none d-lg-block openStepperBtn" id="openStepperBtn">Contacts-nous</button>
-
-        <!-- BURGER -->
-        <a class="burger d-lg-none" id="burgerBtn"><img src="assets/images/burger.svg" alt=""></a>
-      </div>
-
-      
-      <div class="mega-menu d-none d-lg-block ">
-        <div class="container mega-inner">
-
-          <div class="mega-products">
-                <div class="product"><img src="assets/images/bot_school_header.svg" alt="">
-                <a class="btn-mega-link">→</a>
-            </div>
-            <div class="product ">
-                <img src="assets/images/boti_campus_header.svg" alt="">
-                <a class="btn-mega-link">→</a>
-            </div>
-            <div class="product mt-3">
-                <img src="assets/images/boti_kinder_header.svg" alt="">
-                <a class="btn-mega-link">→</a>
-            </div>
-            <div class="product mt-3">
-                <img src="assets/images/boti_classrom_header.svg" alt="">
-                <a class="btn-mega-link">→</a>
-            </div>
-          </div>
-
-          <div class="mega-news ">
-            <div class="flex_mega_news_img">
-              <span class="news-badge">Nouveautés</span>
-              <img src="assets/images/nouveute.svg" alt="">
-            </div>
-            <div class="flex_mega_news_content">
-              <h4>BOTI Campus</h4>
-              <p>Lorem ipsum dolor amet, consectetur adipiscing</p>
-              <a>Toutes les publications</a>
-            </div>
-            <div class="all_new_link">
-                <p>Toutes les publications</p>
-                <a class="btn-mega-link" href="publications.php"><img src="assets/images/next.svg" alt=""></a>
-            </div>
-
-        </div>
-      </div>
-
-    </div>
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu d-lg-none" id="mobileMenu">
-      <img class="mobile-close" id="closeMobileMenu" src="assets/images/close.png" alt="">
-
-      <div class="mobile-item toggle-galaxy">
-        La Galaxy BOTI <span><img src="assets/images/arrow-down-sign-to-navigate.png" alt=""></span>
-      </div>
-
-      <div class="mobile-galaxy">
-        <div class="grid">
-          <div><img src="assets/images/bot_school_header.svg" alt=""></div>
-          <div><img src="assets/images/boti_campus_header.svg" alt=""></div>
-          <div><img src="assets/images/boti_kinder_header.svg" alt=""></div>
-          <div><img src="assets/images/boti_classrom_header.svg" alt=""></div>
-        </div>
-
-        <div class="mobile-news">
-          <div class="flex_mega_news_img">
-            <span class="news-badge">Nouveautés</span>
-            <img src="assets/images/nouveute.svg" alt="">
-          </div>
-          <div class="flex_mega_news_content">
-            <h4>BOTI Campus</h4>
-            <p>Lorem ipsum dolor amet, consectetur adipiscing</p>
-            <a>Toutes les publications</a>
-          </div>
-        </div>
-      </div>
-
-      <a class="mobile-link" href="partnerships.php">Partnerships</a>
-      <a class="mobile-link" href="presse.php">Presse</a>
-      <a class="mobile-link" href="team.php">La Boti Team</a>
-      <a class="mobile-link" href="references.php">Références</a>
-      <a class="mobile-link" href="publications.php">Publications</a>
-      <a class="mobile-link" href="enjoyia.php">AI</a>
-
-      <button class="btn-contact mobile" id="openStepperBtn">Contacts-nous</button>
-    </div>
-
     <div id="stepperModal" class="stepper-modal  ">
         <div class="stepper-container container ">
             <!-- Header with Previous and Close buttons -->
@@ -268,6 +134,7 @@
                     </button>
                 </div>
                 
+                <p class="step-description">Choisissez l'option qui vous convient le mieux.</p>
             </div>
 
             <!-- Step 3: FAQ and Contact/Video -->
@@ -383,5 +250,3 @@
             </div>
         </div>
     </div>
-    </header>
-  <div class="container padding_top_header">
