@@ -90,7 +90,7 @@ const data = [
 /* ===== ELEMENTS ===== */
 let centerIndex = 0;
 
-const items = document.querySelectorAll(".orbit-item");
+const orbitItems = document.querySelectorAll(".orbit-item");
 const dots  = document.querySelectorAll(".dot");
 
 const centerLogo  = document.getElementById("center-logo");
@@ -98,50 +98,118 @@ const centerTitle = document.getElementById("center-title");
 const centerSub   = document.getElementById("center-sub");
 const centerText  = document.getElementById("center-text");
 
-/* ===== UPDATE CENTER CONTENT ===== */
-function updateCenter(){
+/* ===== UPDATE ALL CONTENT (CENTER + ORBIT ITEMS) ===== */
+function updateAll(direction = null){
   const current = data[centerIndex];
   
-  centerLogo.src = current.logo;
-  centerTitle.innerText = current.title;
-  centerSub.innerText   = current.sub;
-  centerText.innerText  = current.text;
+  // If direction specified, rotate the orbit items through positions
+  if(direction){
+    orbitItems.forEach(item => {
+      const currentPos = item.classList.contains('top') ? 'top' :
+                        item.classList.contains('right') ? 'right' : 'left';
+      
+      let nextPos;
+      if(direction === 'next'){
+        // Clockwise: top -> right -> left -> top
+        if(currentPos === 'top') nextPos = 'right';
+        else if(currentPos === 'right') nextPos = 'left';
+        else nextPos = 'top';
+      } else {
+        // Counter-clockwise: top -> left -> right -> top
+        if(currentPos === 'top') nextPos = 'left';
+        else if(currentPos === 'left') nextPos = 'right';
+        else nextPos = 'top';
+      }
+      
+      item.classList.remove('top', 'right', 'left');
+      item.classList.add(nextPos);
+    });
+  }
+  
+  // Add changing class for animation
+  centerLogo.classList.add('changing');
+  centerTitle.classList.add('changing');
+  centerSub.classList.add('changing');
+  centerText.classList.add('changing');
+  
+  // Update center content after animation starts
+  setTimeout(() => {
+    centerLogo.src = current.logo;
+    centerTitle.innerText = current.title;
+    centerSub.innerText   = current.sub;
+    centerText.innerText  = current.text;
+    
+    // Remove changing class to fade back in
+    setTimeout(() => {
+      centerLogo.classList.remove('changing');
+      centerTitle.classList.remove('changing');
+      centerSub.classList.remove('changing');
+      centerText.classList.remove('changing');
+    }, 50);
+  }, 300);
 
+  // Update orbit items content after rotation animation
+  let orbitDataIndices = [];
+  for(let i = 0; i < data.length; i++){
+    if(i !== centerIndex) orbitDataIndices.push(i);
+  }
+  
+  setTimeout(() => {
+    orbitItems.forEach((item, idx) => {
+      const dataIndex = orbitDataIndices[idx];
+      const itemData = data[dataIndex];
+      
+      const img = item.querySelector('.orbit-img');
+      const label = item.querySelector('.orbit-label');
+      
+      if(img && label && itemData){
+        img.src = itemData.logo;
+        label.innerText = itemData.title;
+        
+        // Store data index for click handling
+        item.setAttribute('data-index', dataIndex);
+      }
+    });
+  }, direction ? 350 : 0);
+
+  // Update dots
   dots.forEach((dot, i) => {
     dot.classList.toggle("active", i === centerIndex);
   });
 }
 
-/* ===== ROTATE ORBIT ===== */
-function rotate(direction){
-  items.forEach(item => {
-    if(item.classList.contains("top")){
-      item.classList.replace("top", direction === "next" ? "right" : "left");
-    } else if(item.classList.contains("right")){
-      item.classList.replace("right", direction === "next" ? "bottom" : "top");
-    } else if(item.classList.contains("bottom")){
-      item.classList.replace("bottom", direction === "next" ? "left" : "right");
-    } else if(item.classList.contains("left")){
-      item.classList.replace("left", direction === "next" ? "top" : "bottom");
+/* ===== CLICK ORBIT ITEM TO SELECT ===== */
+orbitItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const dataIndex = parseInt(item.getAttribute("data-index"));
+    if(!isNaN(dataIndex)){
+      centerIndex = dataIndex;
+      updateAll();
     }
   });
+});
 
-  // update index
-  if(direction === "next"){
-    centerIndex = (centerIndex + 1) % data.length;
-  } else {
-    centerIndex = (centerIndex - 1 + data.length) % data.length;
-  }
+/* ===== DOT CLICK ===== */
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    centerIndex = index;
+    updateAll();
+  });
+});
 
-  setTimeout(updateCenter, 400); // attendre animation
-}
+/* ===== ARROW NAVIGATION ===== */
+document.getElementById("next")?.addEventListener("click", () => {
+  centerIndex = (centerIndex + 1) % data.length;
+  updateAll('next');
+});
 
-/* ===== EVENTS ===== */
-document.getElementById("next")?.addEventListener("click", () => rotate("next"));
-document.getElementById("prev")?.addEventListener("click", () => rotate("prev"));
+document.getElementById("prev")?.addEventListener("click", () => {
+  centerIndex = (centerIndex - 1 + data.length) % data.length;
+  updateAll('prev');
+});
 
 /* ===== INIT ===== */
-updateCenter();
+updateAll();
 
 
 
@@ -237,6 +305,52 @@ if (window.scrollY > 50) {
 });
 
 
+// Contact Section Mobile Tabs
+document.addEventListener('DOMContentLoaded', function() {
+  const contactButtons = document.querySelectorAll('.mobile-contact-btn');
+  const contactCards = document.querySelectorAll('.contact-card');
+  
+  if (contactButtons.length > 0 && contactCards.length > 0) {
+    function initMobileContactTabs() {
+      if (window.innerWidth <= 767) {
+        contactCards.forEach((card, index) => {
+          if (index === 0) {
+            card.classList.add('active-mobile');
+          } else {
+            card.classList.remove('active-mobile');
+          }
+        });
+      } else {
+        // On desktop, show all cards
+        contactCards.forEach(card => {
+          card.classList.add('active-mobile');
+        });
+      }
+    }
+    
+    // Handle button clicks
+    contactButtons.forEach((button) => {
+      button.addEventListener('click', function() {
+        if (window.innerWidth <= 767) {
+          contactButtons.forEach(btn => btn.classList.remove('active'));
+          
+          this.classList.add('active');
+          
+          contactCards.forEach(card => card.classList.remove('active-mobile'));
+          
+          const cardIndex = parseInt(this.getAttribute('data-card'));
+          if (contactCards[cardIndex]) {
+            contactCards[cardIndex].classList.add('active-mobile');
+          }
+        }
+      });
+    });
+    
+    initMobileContactTabs();
+    
+    window.addEventListener('resize', initMobileContactTabs);
+  }
+});
 
 
   

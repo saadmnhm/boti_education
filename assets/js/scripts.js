@@ -5,7 +5,7 @@ const youtubeIframe = document.getElementById('youtubeIframe');
 const fullscreenBtn = document.getElementById('fullscreenBtn');
 const videoContainer = document.querySelector('.video-container');
 
-const YOUTUBE_VIDEO_ID = 'VIDEO_ID_HERE';
+const YOUTUBE_VIDEO_ID = 'iR5y3hA4aqs';
 
 playButton.addEventListener('click', function() {
     videoThumbnail.style.display = 'none';
@@ -197,7 +197,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const whyImages = [
         'assets/images_enjoy_ai/student_work.png',
         'assets/images_enjoy_ai/ia_robot.png',
-        'assets/images_enjoy_ai/ia_kids.png'
     ];
     let currentWhyImageIndex = 0;
     let whyAutoRotate = null;
@@ -249,16 +248,24 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const mediaContent = {
         'presse': [
-            'frame_11_1.png', 'frame_11_2.png', 'frame_11_3.png', 'frame_11_4.png', 'frame_11_5.png',
-            'frame_11_1.png', 'frame_11_2.png', 'frame_11_3.png', 'frame_11_4.png', 'frame_11_5.png'
+            { src: 'hespress.png', href: 'https://fr.hespress.com/453260-453260.html' },
+            { src: 'lematin.png', href: 'https://lematin.ma/hi-tech/des-jeunes-marocains-sur-le-podium-de-la-competition-enjoy-ai/318110' },
+            { src: 'frame_11_2.png', href: 'https://aujourdhui.ma/economie/lenjoy-ai-global-final-2025-des-jeunes-marocains-sur-le-podium' },
+            { src: 'linformation.png', href: 'https://www.linformation.ma/news/high-tech/chine-robotique-des-jeunes-marocains-sur-le-podium-de-la-competition-internationale-enjoy-ai/61855' },
+            { src: 'lamap.jpg', href: 'https://www.lamap.ma' },
+            { src: 'mrworld.png', href:'https://www.moroccoworldnews.com/2025/12/271230/moroccan-teams-win-top-awards-at-enjoy-ai-global-final-2025-in-china/' },
+            { src: 'maroc_diplomatique.png', href: 'https://maroc-diplomatique.net/chine-robotique-des-jeunes-marocains-sur-le-podium-de-la-competition/' },
+            { src: 'le360.png', href: 'https://ar.le360.ma/culture/ZIP7HWP2RFH2TOWFKOTP3C5ELI/' },
+            { src: 'leseco.png', href: 'https://leseco.ma/maroc/robotique-ia-les-marocains-brillent-au-enjoy-ai-2025-en-chine.html' },
+            { src: 'frame_11_5.png', href:'https://lobservateur.info/article/115164/video/enjoy-ai-de-jeunes-talents-a-la-conquete-du-monde-de-linnovation' }
         ],
         'reportages': [
-            'frame_11_5.png', 'frame_11_4.png', 'frame_11_1.png', 'frame_11_2.png', 'frame_11_3.png',
-            'frame_11_5.png', 'frame_11_4.png', 'frame_11_1.png', 'frame_11_2.png', 'frame_11_3.png'
-        ],
-        'temoignages': [
-            'frame_11_3.png', 'frame_11_5.png', 'frame_11_2.png', 'frame_11_4.png', 'frame_11_1.png',
-            'frame_11_3.png', 'frame_11_5.png', 'frame_11_2.png', 'frame_11_4.png', 'frame_11_1.png'
+            { src: 'tv_2m.jpg', href: 'https://www.facebook.com/share/p/1GcjAEv8Gb/' },
+            { src: 'frame_11_1.png' },
+            { src: 'aljazira.png', href: 'https://www.aljazeera.com' },
+            { src: 'luxe.png' },
+            { src: 'atlantic.png' },
+            { src: 'snrt_news.png', href: 'https://snrtnews.com/article/142607' }
         ]
     };
 
@@ -269,7 +276,11 @@ document.addEventListener('DOMContentLoaded', function() {
             images.forEach(img => {
                 const logoCard = document.createElement('div');
                 logoCard.className = 'logo-card';
-                logoCard.innerHTML = `<img src="assets/images_enjoy_ai/${img}" alt="Media">`;
+                if (img.href) {
+                    logoCard.innerHTML = `<a href="${img.href}" target="_blank" rel="noopener noreferrer"><img src="assets/images_enjoy_ai/${img.src}" alt="Media"></a>`;
+                } else {
+                    logoCard.innerHTML = `<img src="assets/images_enjoy_ai/${img.src}" alt="Media">`;
+                }
                 logosGrid.appendChild(logoCard);
             });
         }
@@ -285,6 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    updateMediaContent('reportages');
 });
 
 

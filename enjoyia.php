@@ -12,7 +12,7 @@
                     </p>
                 </div>
                 <div class="btn_debar">
-                    <button>débarque au Maroc 🇲🇦!</button>
+                    <button>débarque au Maroc <img src="assets/images_enjoy_ai/mr_icon.png" alt="" style="max-width: 50px;">!</button>
                 </div>
                 <div class="text-center">
                     <img src="assets/images_enjoy_ai/frame_2.png" alt="" class=" text-center mt-3">
@@ -21,7 +21,7 @@
                     <div class="position-relative z-2">
                         <img src="assets/images_enjoy_ai/ia_robot.png" alt="">
                     </div>
-                    <p class="text-center"> Avec plus de 1 000 000 élèves, 53 pays, 5 continents et un Record <br>
+                    <p class="text-center"> Avec plus de 1 000 000 élèves, 64 pays, 5 continents et un Record <br>
                         Guinness mondial, ENJOY AI est la référence mondiale de <br>
                         l’éducation par la robotique et l’IA.</p>
                     <div>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="home_banner_text_2 mobile">
-                    <p class="text-center"> Avec plus de 1 000 000 élèves, 53 pays, 5 continents et un Record <br>
+                    <p class="text-center"> Avec plus de 1 000 000 élèves, 64 pays, 5 continents et un Record <br>
                         Guinness mondial, ENJOY AI est la référence mondiale de <br>
                         l’éducation par la robotique et l’IA.
                     </p>
@@ -80,9 +80,12 @@
                     </div>
                 </div>
                 <div class="btn_banne2">
-                    <button class="insc_btn">Inscrire mon école maintenant <img src="assets/images_enjoy_ai/frame_6.png"
-                            alt=""></button>
-                    <button class="demo_btn">Demander une démo exclusive</button>
+                    <a class="insc_btn me-3" href="#enjoyiaContactForm" >Inscrire mon école maintenant <img src="assets/images_enjoy_ai/frame_6.png"
+                            alt=""></a>
+                    <a href="enjoyia2026.pdf" class="brochure-btn2 justify-content-center" download>
+                        Demander la brochure officielle
+                        <span>⬇</span>
+                    </a>
                 </div>
                 <img src="assets/images_enjoy_ai/frame_5.png" alt="" class="frame-5 desktop">
                 <div class="frame-4-mobile text-center mobile">
@@ -101,7 +104,7 @@
                                         <img src="assets/images_enjoy_ai/frame_8_1.png" class="card-img-top" alt="Card 1">
                                     </div>
                                     <div class="card-body">
-                                        <span>53</span>
+                                        <span>64</span>
                                         <p class="card-text">pays</p>
                                     </div>
                                 </div>
@@ -148,7 +151,7 @@
                     <img src="assets/images_enjoy_ai/map.png" alt="">
                 </div>
                 <div class="btn_presenter text-center desktop">
-                    <button> Je veux que mon école représente le Maroc !</button>
+                    <a href="#enjoyiaContactForm"> Je veux que mon école représente le Maroc !</a href="">
                 </div>
             </div>
             <div class="youtube_carousel">
@@ -196,41 +199,35 @@
     
                             <div class="carousel-wrapper">
                                 <div class="owl-carousel owl-theme thumb-carousel" id="thumbCarousel">
-                                    <div class="thumb-item" data-video-id="dQw4w9WgXcQ"
+                                    <div class="thumb-item" data-video-id="hQkvYvnacgw"
+                                        data-thumbnail="assets/images_enjoy_ai/thumb1.png">
+                                        <div class="thumb"
+                                            style="background-image: url('assets/images_enjoy_ai/thumb1.png'); background-size: cover; background-position: center;">
+                                            <div class="play-overlay">▶</div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-item" data-video-id="mytty7Fgmm4"
+                                        data-thumbnail="assets/images_enjoy_ai/thumb2.png">
+                                        <div class="thumb"
+                                            style="background-image: url('assets/images_enjoy_ai/thumb2.png'); background-size: cover; background-position: center;">
+                                            <div class="play-overlay">▶</div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-item" data-video-id="fcaZHAQ87Qw"
+                                        data-thumbnail="assets/images_enjoy_ai/home_back.png">
+                                        <div class="thumb"
+                                            style="background-image: url('assets/images_enjoy_ai/home_back.png'); background-size: cover; background-position: center;">
+                                            <div class="play-overlay">▶</div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="thumb-item" data-video-id="x7QCBACzLUc"
                                         data-thumbnail="assets/images_enjoy_ai/home_back.png">
                                         <div class="thumb"
                                             style="background-image: url('assets/images_enjoy_ai/home_back.png'); background-size: cover; background-position: center;">
                                             <div class="play-overlay">▶</div>
                                         </div>
                                     </div>
-                                    <div class="thumb-item" data-video-id="9bZkp7q19f0"
-                                        data-thumbnail="assets/images_enjoy_ai/home_back.png">
-                                        <div class="thumb"
-                                            style="background-image: url('assets/images_enjoy_ai/home_back.png'); background-size: cover; background-position: center;">
-                                            <div class="play-overlay">▶</div>
-                                        </div>
-                                    </div>
-                                    <div class="thumb-item" data-video-id="kJQP7kiw5Fk"
-                                        data-thumbnail="assets/images_enjoy_ai/home_back.png">
-                                        <div class="thumb"
-                                            style="background-image: url('assets/images_enjoy_ai/home_back.png'); background-size: cover; background-position: center;">
-                                            <div class="play-overlay">▶</div>
-                                        </div>
-                                    </div>
-                                    <div class="thumb-item" data-video-id="jNQXAC9IVRw"
-                                        data-thumbnail="assets/images_enjoy_ai/home_back.png">
-                                        <div class="thumb"
-                                            style="background-image: url('assets/images_enjoy_ai/home_back.png'); background-size: cover; background-position: center;">
-                                            <div class="play-overlay">▶</div>
-                                        </div>
-                                    </div>
-                                    <div class="thumb-item" data-video-id="VIDEO_5"
-                                        data-thumbnail="assets/images_enjoy_ai/home_back.png">
-                                        <div class="thumb"
-                                            style="background-image: url('assets/images_enjoy_ai/home_back.png'); background-size: cover; background-position: center;">
-                                            <div class="play-overlay">▶</div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -366,7 +363,6 @@
                                 <div class="dots">
                                     <span class="active"></span>
                                     <span></span>
-                                    <span></span>
                                 </div>
                             </div>
     
@@ -375,7 +371,7 @@
     
                                 <ul>
                                     <li>
-                                        <p>La plus <span>grande</span> et plus prestigieuse <span>compétition éducative au
+                                        <p><span>La plus grande</span> et plus prestigieuse <span>compétition éducative au
                                                 monde</span></p>
                                     </li>
                                     <li>
@@ -394,13 +390,9 @@
                                         <p><span>Ouverture mondiale :</span> représenter le Maroc sur la scène
                                             internationale</p>
                                     </li>
-                                    <li>
-                                        <p><span></span>Impact durable :</span> un tremplin pour vos élèves et votre école
-                                        </p>
-                                    </li>
                                 </ul>
     
-                                <a href="#" class="btn">
+                                <a href="enjoyia2026.pdf" class="brochure-btn2" download>
                                     Demander la brochure officielle
                                     <span>⬇</span>
                                 </a>
@@ -535,44 +527,11 @@
                     <h2>ILS PARLENT DE NOUS</h2>
     
                     <div class="tabs">
-                        <button class="tab active" data-tab="presse">Presse</button>
-                        <button class="tab" data-tab="reportages">Reportages TV</button>
-                        <button class="tab" data-tab="temoignages">Témoignages d'écoles participantes</button>
+                        <button class="tab active" data-tab="reportages">Télé & Radio</button>
+                        <button class="tab " data-tab="presse">Presse</button>
                     </div>
     
                     <div class="logos-grid">
-                        <!-- change icon for steps from stepper.js -->
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_1.png" alt="Media">
-                        </div>
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_2.png" alt="Media">
-                        </div>
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_3.png" alt="Media">
-                        </div>
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_4.png" alt="Media">
-                        </div>
-    
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_5.png" alt="Media">
-                        </div>
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_1.png" alt="Media">
-                        </div>
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_2.png" alt="Media">
-                        </div>
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_3.png" alt="Media">
-                        </div>
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_4.png" alt="Media">
-                        </div>
-                        <div class="logo-card">
-                            <img src="assets/images_enjoy_ai/frame_11_5.png" alt="Media">
-                        </div>
                         <!-- change icon for steps from stepper.js -->
                     </div>
     
@@ -605,35 +564,18 @@
                                     </div>
                                     <div class="input-group">
                                         <label>Ville</label>
-                                        <select name="ville" required>
-                                            <option value=""></option>
-                                            <option value="Casablanca">Casablanca</option>
-                                            <option value="Rabat">Rabat</option>
-                                            <option value="Marrakech">Marrakech</option>
-                                            <option value="Fès">Fès</option>
-                                            <option value="Tanger">Tanger</option>
-                                        </select>
+                                        <input type="text" name="ville" placeholder="" required>
+                                       
                                     </div>
     
-                                    <div class="input-group">
-                                        <label>Cycles</label>
-                                        <select name="cycles" required>
-                                            <option value=""></option>
-                                            <option value="primaire">Primaire</option>
-                                            <option value="secondaire">Secondaire</option>
-                                        </select>
-                                    </div>
-                                    <div class="input-group">
-                                        <label>Nombre d'élève</label>
-                                        <input type="number" name="nombre_eleve" placeholder="" required>
-                                    </div>
+                                    
     
                                     <div class="input-group">
-                                        <label>Nom</label>
+                                        <label>Nom / Prénom</label>
                                         <input type="text" name="nom" placeholder="" required>
                                     </div>
                                     <div class="input-group">
-                                        <label>Fonction du contact</label>
+                                        <label>Fonction au sein de l'établissement</label>
                                         <input type="text" name="fonction" placeholder="" required>
                                     </div>
     
@@ -645,19 +587,15 @@
                                         <label>Téléphone</label>
                                         <input type="tel" name="telephone" placeholder="" required>
                                     </div>
-    
-                                    <div class="object-label">
-                                        <label>Objet</label>
+                                    <div class="input-group">
+                                        <label>Nombre d'élève</label>
+                                        <input type="number" name="nombre_eleve" placeholder="" required>
                                     </div>
-                                    <div class="buttons-container">
-                                        <button type="button" class="option-btn" data-objet="inscription">Inscription</button>
-                                        <button type="button" class="option-btn" data-objet="demo">Démo</button>
-                                        <button type="button" class="option-btn" data-objet="rappel">Être rappelé</button>
-                                    </div>
+                                   
                                     <input type="hidden" name="objet" id="objetSelected" required>
     
                                     <div class="input-group full-width">
-                                        <label>Message libre</label>
+                                        <label>Remarque ou Commentaire</label>
                                         <input type="text" name="message" placeholder="">
                                     </div>
     
@@ -673,8 +611,8 @@
     
                 <div class="bg-shape">
                     <div class="logo-row">
-                        <img src="assets/images_enjoy_ai/enjoy_footer.png" alt="Enjoy AI" class="logo-img">
                         <img src="assets/images_enjoy_ai/boti_footer.png" alt="botischool" class="logo-img">
+                        <img src="assets/images_enjoy_ai/enjoy_footer.png" alt="Enjoy AI" class="logo-img">
                         <img src="assets/images_enjoy_ai/asso_footer.png" alt="AssoGen Ai" class="logo-img">
                     </div>
                 </div>

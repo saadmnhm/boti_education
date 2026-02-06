@@ -217,18 +217,21 @@ img{
     align-items: center;
 }
 
-.btn_banne2 button{
+.btn_banne2 a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    align-content: center;
     font-size: 18px;
+    text-decoration: none;
     border: none;
     margin-top: 30px;
     cursor: pointer;
     height: 70px;
     border-radius: 35px;
-    padding: 0px 12px;
+    padding: 0px 30px;
     width: 365px;
 }
+
 .insc_btn{
     color: #937FFF  ;
     background-color: white;
@@ -301,7 +304,7 @@ margin-top: -325px;
     position: relative;
     bottom: 155px;
 }
-.btn_presenter button{
+.btn_presenter a{
     background-color: #7962f6;
     border: none;
     border-radius: 47px;
@@ -310,6 +313,7 @@ margin-top: -325px;
     font-size: 17px;
     font-weight: 500;
     box-shadow: 0 6px 24px 10px #c1b8f5;
+    text-decoration: none;
 
 }
 
@@ -421,7 +425,7 @@ margin-top: -325px;
     font-size: 19px;
 }
 
-.btn {
+.brochure-btn2 {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -779,7 +783,7 @@ font-size: 50px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
     width: 100%;
     position: relative;
-    top: 135px;
+    top: 195px;
 }
 
 .form-grid {
