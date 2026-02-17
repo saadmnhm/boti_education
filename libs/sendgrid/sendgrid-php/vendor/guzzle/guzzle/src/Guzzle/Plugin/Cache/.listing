@@ -1,0 +1,14 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:39 .
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 ..
+-rw-r--r--    1 cigma      cigma             245 Apr 15 12:39 CacheKeyProviderInterface.php
+-rw-r--r--    1 cigma      cigma           13114 Apr 15 12:39 CachePlugin.php
+-rw-r--r--    1 cigma      cigma             981 Apr 15 12:39 CacheStorageInterface.php
+-rw-r--r--    1 cigma      cigma            1667 Apr 15 12:39 CallbackCanCacheStrategy.php
+-rw-r--r--    1 cigma      cigma             649 Apr 15 12:39 CanCacheStrategyInterface.php
+-rw-r--r--    1 cigma      cigma            1502 Apr 15 12:39 DefaultCacheKeyProvider.php
+-rw-r--r--    1 cigma      cigma            8331 Apr 15 12:39 DefaultCacheStorage.php
+-rw-r--r--    1 cigma      cigma             908 Apr 15 12:39 DefaultCanCacheStrategy.php
+-rw-r--r--    1 cigma      cigma            6353 Apr 15 12:39 DefaultRevalidation.php
+-rw-r--r--    1 cigma      cigma             406 Apr 15 12:39 DenyRevalidation.php
+-rw-r--r--    1 cigma      cigma             846 Apr 15 12:39 RevalidationInterface.php
+-rw-r--r--    1 cigma      cigma             406 Apr 15 12:39 SkipRevalidation.php

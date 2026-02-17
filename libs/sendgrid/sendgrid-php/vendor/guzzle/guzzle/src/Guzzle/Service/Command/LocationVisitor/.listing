@@ -1,0 +1,5 @@
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:40 .
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:40 ..
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:40 Request
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:40 Response
+-rw-r--r--    1 cigma      cigma            4819 Apr 15 12:40 VisitorFlyweight.php

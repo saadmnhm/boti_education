@@ -96,7 +96,8 @@ body{
 
 .image_school {
     position: absolute;
-    right:16%;
+    right: 8%;
+    width: 80%;
 }
 
 .has-mega:hover ~ .mega-menu,
@@ -244,7 +245,14 @@ body{
   z-index: 1;
 }
 
+.container_first_section{
+width: 100%;
+    display: inline-grid;
+    padding-left: 45px;
+    padding-right: 45px;
+    justify-content: center;  
 
+}
 
 /* GRADIENT BORDER */
 .pill.gradient-border::before{
@@ -1378,12 +1386,12 @@ color: #25145e;
     font-size: 21px;
 }
 .platforme .card_social a{
-display: block;
-    padding: 10px 45px;
+    display: block;
+    padding: 11px 34px;
     background: #FF4C8E;
     border-radius: 30px;
-    font-size: 11px;
-    width: 100%;
+    align-content: center;
+    width: auto;
     margin: 0 10px;
 }
 .platforme .card_social{
@@ -1391,7 +1399,7 @@ display: block;
   justify-content: center;
 }
 .platforme .card_social a img{
-width: 70%;
+width: 100%;
 }
 .text-center{
   text-align: center;
@@ -1439,12 +1447,12 @@ position: relative;
   margin-bottom: 20px;
 }
 .partenaires .card_images img{
-    width: 75%;
+    width: 100%;
+    object-fit: none;
 }
 .partenaires .card_images {
     background-color: #fff;
     position: relative;
-    padding: 95px 95px;
     border-radius: 24px;
     border: #F2EEFF;
     display: flex;
@@ -1991,7 +1999,7 @@ ul.breadcrumb {
 }
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
+  font-size: 12px;
 }
 ul.breadcrumb li+li:before {
   padding: 8px;

@@ -293,39 +293,40 @@ function submitForm() {
         formData.phone = phoneInput.value.trim();
         formData.address = addressInput.value.trim();
         
-        // Prepare email data
-        const emailData = {
-            step1: selectedOption,
-            step2: selectedPreference,
-            ...formData
-        };
-        
-        // Send data by email using mailto
-        sendEmail(emailData);
-        
-        showStep('success');
+            // Build form data expected by contact.php
+            const form = new FormData();
+            form.append('op', 'enjoyia_contact');
+            form.append('website', ''); // honeypot
+            form.append('etablissement', formData.lastName || '');
+            form.append('ville', formData.address || '');
+            form.append('nom', formData.firstName || '');
+            form.append('fonction', selectedPreference || selectedOption || '');
+            form.append('email', formData.email || '');
+            // split phone if you have country code selector; here we send default +212
+            form.append('country_code', '+212');
+            form.append('telephone', formData.phone || '');
+            form.append('nombre_eleve', formData.budget || 0);
+            form.append('message', 'Demande d\'inscription à Boti Education');
+
+            fetch(BASE_URL + 'contact', {
+                method: 'POST',
+                body: form
+            })
+            .then(r => r.json())
+            .then(json => {
+                if (json && json.status === 'success') {
+                    showStep('success');
+                } else {
+                    console.error('Error sending stepper payload:', json);
+                    showStep('success');
+                }
+            })
+            .catch(err => {
+                console.error('Network error sending stepper payload:', err);
+                showStep('success');
+            });
     }
 }
-
-function sendEmail(data) {
-    // Create email body with formatted data
-    const subject = encodeURIComponent('Nouvelle soumission de formulaire Stepper');
-    const body = encodeURIComponent(
-        `Nouvelle soumission de formulaire:\n\n` +
-        `Étape 1 - Êtes-vous: ${data.step1}\n\n` +
-        `Étape 2 - Type de local: ${data.step2}\n` +
-        `Nombre d'élèves: ${data.budget}\n\n` +
-        `Informations:\n` +
-        `Nom & Prénom: ${data.firstName}\n` +
-        `Nom de l'école: ${data.lastName}\n` +
-        `Email: ${data.email}\n` +
-        `Téléphone: ${data.phone}\n` +
-        `Adresse: ${data.address}\n\n` +
-        `Date: ${new Date().toLocaleString('fr-FR')}`
-    );
-    
-}
-
 init();
 
 function openModal() {

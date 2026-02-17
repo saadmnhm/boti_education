@@ -1,0 +1,10 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 .
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 ..
+-rw-r--r--    1 cigma      cigma             327 Apr 15 12:37 AbstractCacheAdapter.php
+-rw-r--r--    1 cigma      cigma            4237 Apr 15 12:37 CacheAdapterFactory.php
+-rw-r--r--    1 cigma      cigma            1771 Apr 15 12:37 CacheAdapterInterface.php
+-rw-r--r--    1 cigma      cigma            1886 Apr 15 12:37 ClosureCacheAdapter.php
+-rw-r--r--    1 cigma      cigma             869 Apr 15 12:37 DoctrineCacheAdapter.php
+-rw-r--r--    1 cigma      cigma             538 Apr 15 12:37 NullCacheAdapter.php
+-rw-r--r--    1 cigma      cigma            1018 Apr 15 12:37 Zf1CacheAdapter.php
+-rw-r--r--    1 cigma      cigma             919 Apr 15 12:37 Zf2CacheAdapter.php

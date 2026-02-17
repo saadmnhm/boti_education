@@ -1,0 +1,10 @@
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:35 .
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:35 ..
+-rw-r--r--    1 cigma      cigma             135 Apr 15 12:35 .editorconfig
+-rw-r--r--    1 cigma      cigma            1227 Apr 15 12:35 CHANGELOG.md
+-rw-r--r--    1 cigma      cigma            1060 Apr 15 12:35 MIT.LICENSE
+-rw-r--r--    1 cigma      cigma           22964 Apr 15 12:35 README.md
+-rw-r--r--    1 cigma      cigma            8025 Apr 15 12:35 composer.lock
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:35 lib
+-rw-r--r--    1 cigma      cigma              67 Apr 15 12:35 sendgrid-php.php
+drwxr-xr-x    6 cigma      cigma            4096 Apr 15 12:36 vendor

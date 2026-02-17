@@ -1,0 +1,10 @@
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:38 .
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 ..
+-rw-r--r--    1 cigma      cigma            1195 Apr 15 12:37 AbstractHasDispatcher.php
+-rw-r--r--    1 cigma      cigma           11534 Apr 15 12:37 Collection.php
+-rw-r--r--    1 cigma      cigma            1064 Apr 15 12:37 Event.php
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:38 Exception
+-rw-r--r--    1 cigma      cigma             487 Apr 15 12:37 FromConfigInterface.php
+-rw-r--r--    1 cigma      cigma            1358 Apr 15 12:37 HasDispatcherInterface.php
+-rw-r--r--    1 cigma      cigma             245 Apr 15 12:37 ToArrayInterface.php
+-rw-r--r--    1 cigma      cigma             641 Apr 15 12:37 Version.php

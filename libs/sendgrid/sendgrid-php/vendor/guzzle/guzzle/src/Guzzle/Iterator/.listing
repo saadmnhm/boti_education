@@ -1,0 +1,8 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 .
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 ..
+-rw-r--r--    1 cigma      cigma             444 Apr 15 12:37 AppendIterator.php
+-rw-r--r--    1 cigma      cigma            1302 Apr 15 12:37 ChunkedIterator.php
+-rw-r--r--    1 cigma      cigma             986 Apr 15 12:37 FilterIterator.php
+-rw-r--r--    1 cigma      cigma             852 Apr 15 12:37 MapIterator.php
+-rw-r--r--    1 cigma      cigma             610 Apr 15 12:37 MethodProxyIterator.php
+-rw-r--r--    1 cigma      cigma             666 Apr 15 12:37 README.md

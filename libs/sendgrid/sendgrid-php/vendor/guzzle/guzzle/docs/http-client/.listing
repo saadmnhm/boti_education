@@ -1,0 +1,8 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:36 .
+drwxr-xr-x   11 cigma      cigma            4096 Apr 15 12:37 ..
+-rw-r--r--    1 cigma      cigma           23684 Apr 15 12:36 client.rst
+-rw-r--r--    1 cigma      cigma            5804 Apr 15 12:36 entity-bodies.rst
+-rw-r--r--    1 cigma      cigma            3414 Apr 15 12:36 http-redirects.rst
+-rw-r--r--    1 cigma      cigma           32279 Apr 15 12:36 request.rst
+-rw-r--r--    1 cigma      cigma            4852 Apr 15 12:36 response.rst
+-rw-r--r--    1 cigma      cigma            2332 Apr 15 12:36 uri-templates.rst

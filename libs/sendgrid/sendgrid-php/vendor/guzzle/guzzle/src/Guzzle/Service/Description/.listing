@@ -1,0 +1,11 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:40 .
+drwxr-xr-x    7 cigma      cigma            4096 Apr 15 12:40 ..
+-rw-r--r--    1 cigma      cigma           15734 Apr 15 12:39 Operation.php
+-rw-r--r--    1 cigma      cigma            3721 Apr 15 12:39 OperationInterface.php
+-rw-r--r--    1 cigma      cigma           25055 Apr 15 12:39 Parameter.php
+-rw-r--r--    1 cigma      cigma            4073 Apr 15 12:39 SchemaFormatter.php
+-rw-r--r--    1 cigma      cigma           11882 Apr 15 12:40 SchemaValidator.php
+-rw-r--r--    1 cigma      cigma            7308 Apr 15 12:40 ServiceDescription.php
+-rw-r--r--    1 cigma      cigma            2225 Apr 15 12:40 ServiceDescriptionInterface.php
+-rw-r--r--    1 cigma      cigma            2535 Apr 15 12:40 ServiceDescriptionLoader.php
+-rw-r--r--    1 cigma      cigma             977 Apr 15 12:40 ValidatorInterface.php

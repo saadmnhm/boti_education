@@ -1,0 +1,6 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:38 .
+drwxr-xr-x    7 cigma      cigma            4096 Apr 15 12:38 ..
+-rw-r--r--    1 cigma      cigma             520 Apr 15 12:38 CommaAggregator.php
+-rw-r--r--    1 cigma      cigma             572 Apr 15 12:38 DuplicateAggregator.php
+-rw-r--r--    1 cigma      cigma             628 Apr 15 12:38 PhpAggregator.php
+-rw-r--r--    1 cigma      cigma             670 Apr 15 12:38 QueryAggregatorInterface.php

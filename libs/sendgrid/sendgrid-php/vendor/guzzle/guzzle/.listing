@@ -1,0 +1,12 @@
+drwxr-xr-x    5 cigma      cigma            4096 Apr 15 12:37 .
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:35 ..
+-rw-r--r--    1 cigma      cigma           48361 Apr 15 12:36 CHANGELOG.md
+-rw-r--r--    1 cigma      cigma            1111 Apr 15 12:36 LICENSE
+-rw-r--r--    1 cigma      cigma            2543 Apr 15 12:36 README.md
+-rw-r--r--    1 cigma      cigma           21526 Apr 15 12:36 UPGRADING.md
+-rw-r--r--    1 cigma      cigma            1764 Apr 15 12:35 build.xml
+drwxr-xr-x   11 cigma      cigma            4096 Apr 15 12:37 docs
+-rw-r--r--    1 cigma      cigma             593 Apr 15 12:36 phar-stub.php
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:37 phing
+-rw-r--r--    1 cigma      cigma            2378 Apr 15 12:36 phpunit.xml.dist
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:37 src

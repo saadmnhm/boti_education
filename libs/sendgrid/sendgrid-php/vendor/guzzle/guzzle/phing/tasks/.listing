@@ -1,0 +1,5 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 .
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:37 ..
+-rw-r--r--    1 cigma      cigma            3680 Apr 15 12:37 ComposerLintTask.php
+-rw-r--r--    1 cigma      cigma           11904 Apr 15 12:37 GuzzlePearPharPackageTask.php
+-rw-r--r--    1 cigma      cigma           10893 Apr 15 12:37 GuzzleSubSplitTask.php

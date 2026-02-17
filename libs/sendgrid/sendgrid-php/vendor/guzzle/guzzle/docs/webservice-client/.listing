@@ -1,0 +1,5 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 .
+drwxr-xr-x   11 cigma      cigma            4096 Apr 15 12:37 ..
+-rw-r--r--    1 cigma      cigma           30170 Apr 15 12:36 guzzle-service-descriptions.rst
+-rw-r--r--    1 cigma      cigma           13671 Apr 15 12:36 using-the-service-builder.rst
+-rw-r--r--    1 cigma      cigma           28767 Apr 15 12:37 webservice-client.rst

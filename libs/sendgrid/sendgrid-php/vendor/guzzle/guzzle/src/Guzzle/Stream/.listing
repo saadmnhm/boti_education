@@ -1,0 +1,6 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:38 .
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 ..
+-rw-r--r--    1 cigma      cigma            9476 Apr 15 12:38 PhpStreamRequestFactory.php
+-rw-r--r--    1 cigma      cigma            7453 Apr 15 12:38 Stream.php
+-rw-r--r--    1 cigma      cigma            4664 Apr 15 12:38 StreamInterface.php
+-rw-r--r--    1 cigma      cigma             859 Apr 15 12:38 StreamRequestFactoryInterface.php

@@ -1,0 +1,11 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:40 .
+drwxr-xr-x    7 cigma      cigma            4096 Apr 15 12:40 ..
+-rw-r--r--    1 cigma      cigma            1045 Apr 15 12:40 AbstractResourceIteratorFactory.php
+-rw-r--r--    1 cigma      cigma            1775 Apr 15 12:40 CompositeResourceIteratorFactory.php
+-rw-r--r--    1 cigma      cigma             904 Apr 15 12:40 MapResourceIteratorFactory.php
+-rw-r--r--    1 cigma      cigma            2062 Apr 15 12:40 Model.php
+-rw-r--r--    1 cigma      cigma            7516 Apr 15 12:40 ResourceIterator.php
+-rw-r--r--    1 cigma      cigma            3411 Apr 15 12:40 ResourceIteratorApplyBatched.php
+-rw-r--r--    1 cigma      cigma            1992 Apr 15 12:40 ResourceIteratorClassFactory.php
+-rw-r--r--    1 cigma      cigma             789 Apr 15 12:40 ResourceIteratorFactoryInterface.php
+-rw-r--r--    1 cigma      cigma            1795 Apr 15 12:40 ResourceIteratorInterface.php

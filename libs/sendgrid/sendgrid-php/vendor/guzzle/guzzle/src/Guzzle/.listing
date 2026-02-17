@@ -1,0 +1,13 @@
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 .
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:37 ..
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:38 Batch
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 Cache
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:38 Common
+drwxr-xr-x    7 cigma      cigma            4096 Apr 15 12:38 Http
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 Inflection
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 Iterator
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 Log
+drwxr-xr-x    6 cigma      cigma            4096 Apr 15 12:38 Parser
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 Plugin
+drwxr-xr-x    7 cigma      cigma            4096 Apr 15 12:40 Service
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:38 Stream

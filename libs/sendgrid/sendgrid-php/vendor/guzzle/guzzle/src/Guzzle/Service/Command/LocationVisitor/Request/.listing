@@ -1,0 +1,12 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:40 .
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:40 ..
+-rw-r--r--    1 cigma      cigma            2302 Apr 15 12:40 AbstractRequestVisitor.php
+-rw-r--r--    1 cigma      cigma            2479 Apr 15 12:40 BodyVisitor.php
+-rw-r--r--    1 cigma      cigma            1529 Apr 15 12:40 HeaderVisitor.php
+-rw-r--r--    1 cigma      cigma            2024 Apr 15 12:40 JsonVisitor.php
+-rw-r--r--    1 cigma      cigma             525 Apr 15 12:40 PostFieldVisitor.php
+-rw-r--r--    1 cigma      cigma             702 Apr 15 12:40 PostFileVisitor.php
+-rw-r--r--    1 cigma      cigma             536 Apr 15 12:40 QueryVisitor.php
+-rw-r--r--    1 cigma      cigma            1079 Apr 15 12:40 RequestVisitorInterface.php
+-rw-r--r--    1 cigma      cigma             499 Apr 15 12:40 ResponseBodyVisitor.php
+-rw-r--r--    1 cigma      cigma            8099 Apr 15 12:40 XmlVisitor.php

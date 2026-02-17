@@ -1,0 +1,10 @@
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:37 .
+drwxr-xr-x    5 cigma      cigma            4096 Apr 15 12:36 ..
+-rw-r--r--    1 cigma      cigma           13362 Apr 15 12:36 AbstractEventDispatcherTest.php
+-rw-r--r--    1 cigma      cigma            7567 Apr 15 12:36 ContainerAwareEventDispatcherTest.php
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 Debug
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 DependencyInjection
+-rw-r--r--    1 cigma      cigma             509 Apr 15 12:36 EventDispatcherTest.php
+-rw-r--r--    1 cigma      cigma            2228 Apr 15 12:36 EventTest.php
+-rw-r--r--    1 cigma      cigma            3574 Apr 15 12:36 GenericEventTest.php
+-rw-r--r--    1 cigma      cigma            2913 Apr 15 12:36 ImmutableEventDispatcherTest.php

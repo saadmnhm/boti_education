@@ -1,0 +1,15 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:36 .
+drwxr-xr-x   11 cigma      cigma            4096 Apr 15 12:37 ..
+-rw-r--r--    1 cigma      cigma             754 Apr 15 12:36 async-plugin.rst
+-rw-r--r--    1 cigma      cigma            1014 Apr 15 12:36 backoff-plugin.rst
+-rw-r--r--    1 cigma      cigma            7332 Apr 15 12:36 cache-plugin.rst
+-rw-r--r--    1 cigma      cigma            1067 Apr 15 12:36 cookie-plugin.rst
+-rw-r--r--    1 cigma      cigma            3472 Apr 15 12:36 creating-plugins.rst
+-rw-r--r--    1 cigma      cigma            1047 Apr 15 12:36 curl-auth-plugin.rst
+-rw-r--r--    1 cigma      cigma             720 Apr 15 12:36 history-plugin.rst
+-rw-r--r--    1 cigma      cigma            3259 Apr 15 12:37 log-plugin.rst
+-rw-r--r--    1 cigma      cigma            1286 Apr 15 12:36 md5-validator-plugin.rst
+-rw-r--r--    1 cigma      cigma             870 Apr 15 12:36 mock-plugin.rst
+-rw-r--r--    1 cigma      cigma            1100 Apr 15 12:36 oauth-plugin.rst
+-rw-r--r--    1 cigma      cigma             289 Apr 15 12:36 plugins-list.rst.inc
+-rw-r--r--    1 cigma      cigma            2276 Apr 15 12:36 plugins-overview.rst

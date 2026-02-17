@@ -1,0 +1,11 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 .
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 ..
+-rw-r--r--    1 cigma      cigma             288 Apr 15 12:37 AbstractLogAdapter.php
+-rw-r--r--    1 cigma      cigma             615 Apr 15 12:37 ArrayLogAdapter.php
+-rw-r--r--    1 cigma      cigma             583 Apr 15 12:37 ClosureLogAdapter.php
+-rw-r--r--    1 cigma      cigma             491 Apr 15 12:37 LogAdapterInterface.php
+-rw-r--r--    1 cigma      cigma            7119 Apr 15 12:37 MessageFormatter.php
+-rw-r--r--    1 cigma      cigma             739 Apr 15 12:37 MonologLogAdapter.php
+-rw-r--r--    1 cigma      cigma             862 Apr 15 12:37 PsrLogAdapter.php
+-rw-r--r--    1 cigma      cigma             493 Apr 15 12:37 Zf1LogAdapter.php
+-rw-r--r--    1 cigma      cigma             393 Apr 15 12:37 Zf2LogAdapter.php

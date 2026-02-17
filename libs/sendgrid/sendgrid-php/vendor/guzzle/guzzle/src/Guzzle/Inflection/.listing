@@ -1,0 +1,6 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:37 .
+drwxr-xr-x   13 cigma      cigma            4096 Apr 15 12:39 ..
+-rw-r--r--    1 cigma      cigma             851 Apr 15 12:37 Inflector.php
+-rw-r--r--    1 cigma      cigma             574 Apr 15 12:37 InflectorInterface.php
+-rw-r--r--    1 cigma      cigma            1965 Apr 15 12:37 MemoizingInflector.php
+-rw-r--r--    1 cigma      cigma            1771 Apr 15 12:37 PreComputedInflector.php

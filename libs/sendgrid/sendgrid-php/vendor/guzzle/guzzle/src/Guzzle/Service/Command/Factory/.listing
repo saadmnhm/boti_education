@@ -1,0 +1,8 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:40 .
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:40 ..
+-rw-r--r--    1 cigma      cigma            1120 Apr 15 12:40 AliasFactory.php
+-rw-r--r--    1 cigma      cigma            4122 Apr 15 12:40 CompositeFactory.php
+-rw-r--r--    1 cigma      cigma            1605 Apr 15 12:40 ConcreteClassFactory.php
+-rw-r--r--    1 cigma      cigma             426 Apr 15 12:40 FactoryInterface.php
+-rw-r--r--    1 cigma      cigma             639 Apr 15 12:40 MapFactory.php
+-rw-r--r--    1 cigma      cigma            2157 Apr 15 12:40 ServiceDescriptionFactory.php

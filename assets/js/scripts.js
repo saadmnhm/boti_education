@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { src: 'frame_11_1.png' },
             { src: 'aljazira.png', href: 'https://www.aljazeera.com' },
             { src: 'luxe.png' },
-            { src: 'atlantic.png' },
+            { src: 'atlantic.png', href:'https://www.instagram.com/reel/DL0GkmysSjd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='},
             { src: 'snrt_news.png', href: 'https://snrtnews.com/article/142607' }
         ]
     };
@@ -301,11 +301,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const header = document.getElementById('mainHeader');
-
-window.addEventListener('scroll', () => {
-if (window.scrollY > 50) {
-    header.classList.add('scrolled');
-} else {
-    header.classList.remove('scrolled');
+if (header) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 }
-});

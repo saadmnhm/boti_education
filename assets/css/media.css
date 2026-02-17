@@ -19,6 +19,7 @@
     }
     .why-content{
         padding-left: 0px !important;
+      text-align: center !important;
     }
     .why-content h2{
       text-align: center;
@@ -28,10 +29,10 @@
       margin-top: 0px !important;
     }
     .mobile-768{
-        display: block;
+        display: block !important;
     }
     .desktop-768{
-        display: none;
+        display: none !important;
     }
     .country{
         background-image: url(../images_enjoy_ai/mobile_banner6.png) !important;
@@ -884,6 +885,12 @@
             height: 55px;
         }
     } 
+    .footer-container{
+      margin-top: 0px !important;
+      .bg-shape{
+        border-radius: 0px !important;
+      }
+    }
 }
 
 
@@ -1236,6 +1243,18 @@
     .padding_top_header {
         padding: 75px 0 0 0;
     }
+      .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .robot {
+    display: none;
+  }
+
+  .media-container h2 {
+    font-size: 26px !important;
+        margin-top: 21px !important;
+  }
 }
 
 
@@ -1431,12 +1450,11 @@
 }
 
 .desktop-768{
-    display: block;
+    display: block ;
 }
 .mobile-768{
-    display: none;
+    display: none ;
 }
-
 
 
 

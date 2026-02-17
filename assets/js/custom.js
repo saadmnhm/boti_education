@@ -31,50 +31,62 @@ $(document).ready(function(){
 
 
   /* ================= ACTIVE NAV LINK ================= */
-  document.addEventListener('DOMContentLoaded', () => {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.php';
-    
-    // Skip on index page
-    if (currentPage === 'index.php' || currentPage === '') return;
-
-    const logoHeader = document.querySelector('.logo-header');
-    const openStepperBtn = document.getElementById('openStepperBtn');
-    const navLinks = document.querySelectorAll('.nav-link, .mobile-link');
-    const mainHeader = document.getElementById('mainHeader');
-    const burger = document.getElementById('burgerBtn'); 
+document.addEventListener('DOMContentLoaded', () => {
+  const path = window.location.pathname.replace(/\/+$/, ''); 
+  const parts = path.split('/').filter(Boolean); 
+  const currentPage = parts[parts.length - 1] || '';
 
 
-    document.querySelectorAll('.nav-link').forEach(el => el.classList.add('color-change'));
-    
-    if (openStepperBtn) {
-      openStepperBtn.style.color = '#231759';
-      openStepperBtn.style.borderColor = '#231759';
+  if (
+    currentPage === 'home' ||
+    parts.length === 0 ||
+    (parts.length === 1 && parts[0] === 'boti_education')
+  ) {
+    return;
+  }
+
+
+
+  const logoHeader = document.querySelector('.logo-header');
+  const openStepperBtn = document.getElementById('openStepperBtn');
+  const navLinks = document.querySelectorAll('.nav-link, .mobile-link');
+  const mainHeader = document.getElementById('mainHeader');
+  const burger = document.getElementById('burgerBtn');
+
+  document.querySelectorAll('.nav-link').forEach(el =>
+    el.classList.add('color-change')
+  );
+
+  if (openStepperBtn) {
+    openStepperBtn.style.color = '#231759';
+    openStepperBtn.style.borderColor = '#231759';
+  }
+
+  if (mainHeader) {
+    mainHeader.style.position = 'relative';
+  }
+
+  if (logoHeader) {
+    logoHeader.src = BASE_URL + "assets/images/logo_boti_purple.png";
+  }
+
+  if (burger) {
+    burger.style.filter =
+      "invert(48%) sepia(74%) saturate(7493%) hue-rotate(246deg) brightness(58%) contrast(101%)";
+  }
+
+  // Activate current link
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+
+    const linkFile = href.replace(/\/+$/, '').split('/').pop();
+    if (linkFile === currentPage) {
+      link.classList.add('active');
     }
-    
-    if (mainHeader) {
-      mainHeader.style.position = 'relative';
-    }
-    
-    if (logoHeader) {
-      logoHeader.src = "assets/images/logo_boti_purple.png";
-    }
-
-    if(burger){
-        burger.style.filter = "invert(48%) sepia(74%) saturate(7493%) hue-rotate(246deg) brightness(58%) contrast(101%)";
-    }
-
-    // Find and activate matching link
-    navLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      if (!href) return;
-
-      const linkFile = href.split('/').pop();
-      
-      if (linkFile === currentPage) {
-        link.classList.add('active');
-      }
-    });
   });
+});
+
 
 
 

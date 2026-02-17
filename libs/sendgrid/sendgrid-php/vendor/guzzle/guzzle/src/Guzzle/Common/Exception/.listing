@@ -1,0 +1,8 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:38 .
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:38 ..
+-rw-r--r--    1 cigma      cigma             134 Apr 15 12:38 BadMethodCallException.php
+-rw-r--r--    1 cigma      cigma            2832 Apr 15 12:38 ExceptionCollection.php
+-rw-r--r--    1 cigma      cigma             100 Apr 15 12:38 GuzzleException.php
+-rw-r--r--    1 cigma      cigma             138 Apr 15 12:38 InvalidArgumentException.php
+-rw-r--r--    1 cigma      cigma             122 Apr 15 12:38 RuntimeException.php
+-rw-r--r--    1 cigma      cigma             138 Apr 15 12:38 UnexpectedValueException.php

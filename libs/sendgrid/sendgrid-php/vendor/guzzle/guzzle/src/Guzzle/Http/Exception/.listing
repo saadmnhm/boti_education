@@ -1,0 +1,11 @@
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:38 .
+drwxr-xr-x    7 cigma      cigma            4096 Apr 15 12:38 ..
+-rw-r--r--    1 cigma      cigma            1844 Apr 15 12:38 BadResponseException.php
+-rw-r--r--    1 cigma      cigma             176 Apr 15 12:38 ClientErrorResponseException.php
+-rw-r--r--    1 cigma      cigma             177 Apr 15 12:38 CouldNotRewindStreamException.php
+-rw-r--r--    1 cigma      cigma            1859 Apr 15 12:38 CurlException.php
+-rw-r--r--    1 cigma      cigma             174 Apr 15 12:38 HttpException.php
+-rw-r--r--    1 cigma      cigma            3459 Apr 15 12:38 MultiTransferException.php
+-rw-r--r--    1 cigma      cigma             774 Apr 15 12:38 RequestException.php
+-rw-r--r--    1 cigma      cigma             176 Apr 15 12:38 ServerErrorResponseException.php
+-rw-r--r--    1 cigma      cigma             105 Apr 15 12:38 TooManyRedirectsException.php

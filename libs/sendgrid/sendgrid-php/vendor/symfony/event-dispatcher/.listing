@@ -1,0 +1,16 @@
+drwxr-xr-x    5 cigma      cigma            4096 Apr 15 12:36 .
+drwxr-xr-x    3 cigma      cigma            4096 Apr 15 12:36 ..
+-rw-r--r--    1 cigma      cigma             696 Apr 15 12:36 CHANGELOG.md
+-rw-r--r--    1 cigma      cigma            6128 Apr 15 12:36 ContainerAwareEventDispatcher.php
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:36 Debug
+drwxr-xr-x    2 cigma      cigma            4096 Apr 15 12:36 DependencyInjection
+-rw-r--r--    1 cigma      cigma            3610 Apr 15 12:36 Event.php
+-rw-r--r--    1 cigma      cigma            5302 Apr 15 12:36 EventDispatcher.php
+-rw-r--r--    1 cigma      cigma            3029 Apr 15 12:36 EventDispatcherInterface.php
+-rw-r--r--    1 cigma      cigma            1581 Apr 15 12:36 EventSubscriberInterface.php
+-rw-r--r--    1 cigma      cigma            3891 Apr 15 12:36 GenericEvent.php
+-rw-r--r--    1 cigma      cigma            2240 Apr 15 12:36 ImmutableEventDispatcher.php
+-rw-r--r--    1 cigma      cigma            1065 Apr 15 12:36 LICENSE
+-rw-r--r--    1 cigma      cigma             629 Apr 15 12:36 README.md
+drwxr-xr-x    4 cigma      cigma            4096 Apr 15 12:37 Tests
+-rw-r--r--    1 cigma      cigma             835 Apr 15 12:36 phpunit.xml.dist
